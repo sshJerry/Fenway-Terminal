@@ -1,3 +1,11 @@
+# Don't post this on a public repo lol
+auth/token.json
+auth/apikeys.json
+auth/whyParseThis.json
+auth/scrapingQuestionMark.json
+.env
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
