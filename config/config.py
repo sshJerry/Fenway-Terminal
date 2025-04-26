@@ -1,0 +1,13 @@
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+SCHWAB_TEMPLATE_URL = os.getenv('SCHWAB_TEMPLATE_URL')
+SCHWAB_TOKEN_URL = os.getenv("SCHWAB_TOKEN_URL")
+SCHWAB_BASE_URL = os.getenv("SCHWAB_BASE_URL")
+
+SCHWAB_APP_KEY = os.getenv("SCHWAB_APP_KEY")
+SCHWAB_SECRET = os.getenv("SCHWAB_SECRET")
+SCHWAB_CALLBACK_URL = os.getenv("SCHWAB_CALLBACK_URL")
+SCHWAB_URL = SCHWAB_TEMPLATE_URL.format(app_key=SCHWAB_APP_KEY, callback=SCHWAB_CALLBACK_URL)
